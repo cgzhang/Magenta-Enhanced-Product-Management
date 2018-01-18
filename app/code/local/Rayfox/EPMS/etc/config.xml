@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rayfox_EPMS>
+			<version>0.1.0</version>
+		</Rayfox_EPMS>
+	</modules>
+	<global>
+		<blocks>
+			<rayfox_epms>
+				<class>Rayfox_EPMS_Block</class>
+			</rayfox_epms>
+		</blocks>
+		<helpers>
+			<rayfox_epms>
+				<class>Rayfox_EPMS_Helper</class>
+			</rayfox_epms>
+		</helpers>
+	</global>
+	<admin>
+         <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <rayfox_epms before="Mage_Adminhtml">Rayfox_EPMS_Adminhtml</rayfox_epms>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+     <adminhtml>
+		<layout>
+            <updates>
+                <glscatalog>
+                    <file>epms.xml</file>
+                </glscatalog>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

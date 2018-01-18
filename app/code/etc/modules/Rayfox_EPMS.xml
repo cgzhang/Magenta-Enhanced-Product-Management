@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Rayfox_EPMS>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Rayfox_EPMS>
+    </modules>
+</config>
